@@ -57,6 +57,12 @@ Responsive-Glassmorphism-Navbar/
 └── README.md
 
 
+## Preview-
+
+preview1.png
+preview2.png
+preview3.png
+
 ## What I Learned
 
 Through this project, I practiced and understood:
