@@ -51,6 +51,9 @@ Responsive-Glassmorphism-Navbar/
 ├── style.css
 ├── script.js
 ├── Backgroung-image.png
+├── preview1.png
+├── preview2.png
+├── preview3.png
 └── README.md
 
 
