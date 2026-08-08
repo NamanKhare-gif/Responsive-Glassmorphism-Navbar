@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Glassmorphism Navbar</title>
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-style">
+
+            <div class="logo">
+                ResponsiveNav
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="menu-btn"
+                aria-label="Open navigation menu"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- Mobile Sidebar -->
+    <aside class="sidebar">
+
+        <div class="closing-link">
+
+            <div class="logo sec-logo">
+                ResponsiveNav
+            </div>
+
+            <button
+                class="close-btn"
+                id="close"
+                aria-label="Close navigation menu"
+            >
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+        </div>
+
+        <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+/* =========================
+   Global
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   Background
+========================= */
+
+.navbar {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url("Backgroung-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   Main Navbar
+========================= */
+
+.nav-style {
+    height: 75px;
+    width: 97%;
+
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.20),
+        inset 0 1px 2px rgba(0, 0, 0, 0.08);
+
+    z-index: 100;
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+    color: #1c1917;
+    font-size: 23px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Desktop Navigation
+========================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #292524;
+    font-size: 17px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Hover underline */
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #1c1917;
+
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   Mobile Menu Button
+========================= */
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    color: #1c1917;
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: min(280px, 80vw);
+    height: 100vh;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-left: 1px solid rgba(0, 0, 0, 0.30);
+
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.20);
+
+    transition: right 0.35s ease;
+
+    z-index: 999;
+}
+
+
+/* Sidebar open */
+
+.sidebar.active {
+    right: 0;
+}
+
+
+/* Sidebar Header */
+
+.closing-link {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.sec-logo {
+    margin: 0;
+}
+
+
+/* Close Button */
+
+.close-btn {
+    border: none;
+    background: transparent;
+
+    color: #1c1917;
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+
+/* Mobile Navigation */
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 30px 35px;
+}
+
+.mobile-nav a {
+    position: relative;
+
+    color: #1c1917;
+    font-size: 17px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    color: #000;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 828px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-style {
+        width: calc(100% - 30px);
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+    .nav-style {
+        width: calc(100% - 20px);
+        height: 68px;
+
+        padding: 0 18px;
+
+        border-radius: 17px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu-btn {
+        font-size: 25px;
+    }
+
+    .sidebar {
+        width: 80vw;
+    }
+}
+
+
+/* =========================
+   Very Small Mobile
+========================= */
+
+@media (max-width: 360px) {
+
+    .nav-style {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .menu-btn {
+        font-size: 23px;
+    }
+}
