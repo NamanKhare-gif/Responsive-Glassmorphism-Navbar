@@ -71,15 +71,6 @@ Event listeners
 Responsive navigation patterns
 
 
-## Future Improvements
-
-Add an overlay when the sidebar opens
-Close sidebar when clicking outside
-Add active navigation states
-Add navbar scroll effects
-Improve accessibility
-
-
 ## Project Goal
 
 This is a frontend learning project created to strengthen my understanding of responsive design and learn how responsive navigation systems are built from scratch.
